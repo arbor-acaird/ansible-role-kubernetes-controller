@@ -16,6 +16,10 @@ This role requires that you already created some certificates for Kubernetes API
 Changelog
 ---------
 
+**r4.0.2_v1.10.6*
+
+- update `k8s_release` to `1.10.6`
+
 **r4.0.2_v1.10.4**
 
 - wait for kube-apiserver on port 8080 no longer needed (fixes [#11](https://github.com/githubixx/ansible-role-kubernetes-controller/issues/11))
@@ -78,7 +82,7 @@ k8s_conf_dir: "/var/lib/kubernetes"
 # The directory to store the K8s binaries
 k8s_bin_dir: "/usr/local/bin"
 # K8s release
-k8s_release: "1.10.4"
+k8s_release: "1.10.6"
 # The interface on which the K8s services should listen on. As all cluster
 # communication should use the PeerVPN interface the interface name is
 # normally "tap0" or "peervpn0".
